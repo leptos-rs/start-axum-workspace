@@ -1,4 +1,4 @@
-use crate::error_template::{ErrorTemplate, AppError};
+use crate::error_template::{AppError, ErrorTemplate};
 
 use leptos::*;
 use leptos_meta::*;
@@ -12,10 +12,6 @@ pub fn App() -> impl IntoView {
     provide_meta_context();
 
     view! {
-
-
-        // injects a stylesheet into the document <head>
-        // id=leptos means cargo-leptos will hot-reload this stylesheet
         <Stylesheet id="leptos" href="/pkg/start-axum-workspace.css"/>
 
         // sets the document title
