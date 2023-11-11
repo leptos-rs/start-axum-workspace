@@ -24,7 +24,7 @@ thiserror = "1.0.40"
 tokio = { version = "1.26.0", features = ["full"] }
 tower = { version = "0.4.13", features = ["full"] }
 tower-http = { version = "0.4.0", features = ["full"] }
-wasm-bindgen = "=0.2.87"
+wasm-bindgen = "=0.2.88"
 
 # See https://github.com/akesson/cargo-leptos for documentation of all the parameters.
 
