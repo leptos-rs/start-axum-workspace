@@ -85,3 +85,7 @@ LEPTOS_SITE_ADDR="127.0.0.1:3000"
 LEPTOS_RELOAD_PORT="3001"
 ```
 Finally, run the server binary.
+
+## Licensing
+
+This template itself is released under the Unlicense. You should replace the LICENSE for your own application with an appropriate license if you plan to release it publicly.
