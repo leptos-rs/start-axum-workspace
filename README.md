@@ -30,6 +30,16 @@ to go to your newly created project.
 Feel free to explore the project structure, but the best place to start with your application code is in `src/app.rs`.  
 Addtionally, Cargo.toml may need updating as new versions of the dependencies are released, especially if things are not working after a `cargo update`.
 
+### Islands support
+
+Note that for islands to work correctly, you need to you need to have a `use app;` in your frontend `lib.rs` otherwise rustc / wasm_bindgen gets confused.
+To prevent clippy from complaining, at the top of the `frontend/lib.rs` file place:
+```rust
+#[allow(clippy::single_component_path_imports)]
+#[allow(unused_imports)]
+use app;
+```
+
 ## Running your project
 
 ```bash
