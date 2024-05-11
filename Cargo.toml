@@ -9,9 +9,9 @@ lto = true
 opt-level = 'z'
 
 [workspace.dependencies]
-leptos = { version = "0.6", features = ["nightly"] }
-leptos_meta = { version = "0.6", features = ["nightly"] }
-leptos_router = { version = "0.6", features = ["nightly"] }
+leptos = { version = "0.6"{% if nightly == "Yes" %}, features = ["nightly"]{% endif %} }
+leptos_meta = { version = "0.6"{% if nightly == "Yes" %}, features = ["nightly"]{% endif %} }
+leptos_router = { version = "0.6"{% if nightly == "Yes" %}, features = ["nightly"]{% endif %} }
 leptos_axum = { version = "0.6" }
 
 axum = "0.7"
