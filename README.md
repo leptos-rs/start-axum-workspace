@@ -32,7 +32,7 @@ Addtionally, Cargo.toml may need updating as new versions of the dependencies ar
 
 ### Islands support
 
-Note that for islands to work correctly, you need to you need to have a `use app;` in your frontend `lib.rs` otherwise rustc / wasm_bindgen gets confused.
+Note that for islands to work correctly, you need to have a `use app;` in your frontend `lib.rs` otherwise rustc / wasm_bindgen gets confused.
 To prevent clippy from complaining, at the top of the `frontend/lib.rs` file place:
 ```rust
 #[allow(clippy::single_component_path_imports)]
