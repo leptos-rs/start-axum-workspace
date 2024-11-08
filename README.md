@@ -17,7 +17,7 @@ cargo install cargo-leptos --locked
 
 Then run
 ```bash
-cargo leptos new --git https://github.com/leptos-rs/start-axum-workspace/
+cargo leptos new --git https://github.com/leptos-rs/start-axum-workspace-0.7/
 ```
 
 to generate a new project template.
@@ -83,12 +83,12 @@ After running a `cargo leptos build --release` the minimum files needed are:
 
 Copy these files to your remote server. The directory structure should be:
 ```text
-start-axum
+start-axum-workspace
 site/
 ```
 Set the following enviornment variables (updating for your project as needed):
 ```text
-LEPTOS_OUTPUT_NAME="start-axum"
+LEPTOS_OUTPUT_NAME="start-axum-workspace"
 LEPTOS_SITE_ROOT="site"
 LEPTOS_SITE_PKG_DIR="pkg"
 LEPTOS_SITE_ADDR="127.0.0.1:3000"
