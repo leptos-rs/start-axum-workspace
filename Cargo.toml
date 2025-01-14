@@ -20,11 +20,11 @@ console_error_panic_hook = "0.1.7"
 console_log = "1"
 http = "1"
 log = "0.4.20"
-simple_logger = "4.2.0"
-thiserror = "1"
+simple_logger = "5.0.0"
+thiserror = "2.0.11"
 tokio = { version = "1.33.0", features = ["full"] }
-tower = { version = "0.4.13", features = ["full"] }
-tower-http = { version = "0.5", features = ["full"] }
+tower = { version = "0.5.2", features = ["full"] }
+tower-http = { version = "0.6.2", features = ["full"] }
 wasm-bindgen = "=0.2.100"
 
 # See https://github.com/akesson/cargo-leptos for documentation of all the parameters.
