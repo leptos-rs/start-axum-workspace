@@ -29,7 +29,7 @@ pub fn App() -> impl IntoView {
     provide_meta_context();
 
     view! {
-        <Stylesheet id="leptos" href="/pkg/start-axum-workspace.css"/>
+        <Stylesheet id="leptos" href="/pkg/{{project-name}}.css"/>
 
         // sets the document title
         <Title text="Welcome to Leptos"/>
