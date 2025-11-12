@@ -26,14 +26,14 @@ to generate a new project template.
 cd {{project-name}}
 ```
 
-to go to your newly created project.  
-Feel free to explore the project structure, but the best place to start with your application code is in `src/app.rs`.  
+to go to your newly created project.
+Feel free to explore the project structure, but the best place to start with your application code is in `app/src/lib.rs`.
 Additionally, Cargo.toml may need updating as new versions of the dependencies are released, especially if things are not working after a `cargo update`.
 
 ### Islands support
 
 Note that for islands to work correctly, you need to have a `use app;` in your frontend `lib.rs` otherwise rustc / wasm_bindgen gets confused.
-To prevent clippy from complaining, at the top of the `frontend/lib.rs` file place:
+To prevent clippy from complaining, at the top of the `frontend/src/lib.rs` file place:
 ```rust
 #[allow(clippy::single_component_path_imports)]
 #[allow(unused_imports)]
@@ -65,9 +65,9 @@ Will generate your server binary in target/server/release and your site package 
 
 ## Testing Your Project
 
-Cargo-leptos uses (https://playwright.dev)[Playwright] as the end-to-end test tool. 
+Cargo-leptos uses [Playwright](https://playwright.dev) as the end-to-end test tool.
 
-Prior to the first run of the end-to-end tests run Playwright must be installed. 
+Prior to the first run of the end-to-end tests run Playwright must be installed.
 In the project's `end2end` directory run `npm install -D playwright @playwright/test` to install playwright and browser specific APIs.
 
 To run the tests during development in the project root run:
